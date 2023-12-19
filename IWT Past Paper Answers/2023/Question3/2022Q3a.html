@@ -1,0 +1,39 @@
+<html> 
+<head> 
+ 	<title>Registration Form</title> 
+ 
+ 	<script> //1 mark 
+ 	 	function matchPassword() //1 mark
+		{   	 	
+		var pw1 = document.getElementById("pwd").value; //1.5 marks 
+ 	 	var pw2 = document.getElementById("cnfrmpwd").value; //1.5 marks  	 	
+		if(pw1 != pw2) //1 mark 
+ 	 	{ 	 
+ 	 	 	 alert("Passwords did not match"); //1 mark 
+ 	 	}  
+ 	 	else 
+		{ 
+ 	 	 	alert("Password created successfully"); //1 mark 
+ 	 	} 
+ 	 	} 
+ 	</script> 
+</head> 
+<body> 
+ 	<fieldset style="width:25%;"> <!-- 2 marks -->
+ 	<legend><h3>Password Checker</h3></legend> <!-- 1 mark -->
+ 	 
+ 	Password:<br/> 
+ 	<input type="password" id="pwd" required> <br/><br/> <!-- 1 mark -->
+ 	Re-enter Password:<br/> 
+ 	<input type="password" id="cnfrmpwd" required> <br/><br/> <!-- 1 mark -->
+ 	</fieldset> 
+ 	<br/> 
+ 	 
+ 	<input type="button" id="submitBtn" value="Submit"   	
+	style="color:red; background-color:yellow;" 
+ 	onclick="matchPassword()"> 
+	
+	<!-- 1 mark, 4 marks, 2 marks --> 
+ 
+</body> 
+</html> 
